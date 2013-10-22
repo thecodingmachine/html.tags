@@ -3,6 +3,7 @@ namespace Mouf\Html\Tags;
 
 use Mouf\Html\Tags\GlobalAttributesTrait;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
+use Mouf\Utils\Value\ValueInterface;
 
 /**
  * A &lt;meta&gt; tag in HTML.
@@ -38,7 +39,7 @@ class Meta implements HtmlElementInterface {
 	 * 
 	 * Other metadata names may be registered in the WHATWG Wiki MetaExtensions page. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getName() {
 		return $this->attributes['name'];
@@ -60,7 +61,7 @@ class Meta implements HtmlElementInterface {
 	 * 
 	 * Other metadata names may be registered in the WHATWG Wiki MetaExtensions page. 
 	 * 
-	 * @param string $name
+	 * @param string|ValueInterface $name
 	 * @return static
 	 */
 	public function setName($name) {
@@ -79,10 +80,10 @@ class Meta implements HtmlElementInterface {
 	 *     refresh
 	 *     Acts as timed redirect.
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getHttpequiv() {
-		return $this->attributes['Http-equiv'];
+		return $this->attributes['http-equiv'];
 	}
 	
 	/**
@@ -97,17 +98,17 @@ class Meta implements HtmlElementInterface {
 	 *     refresh
 	 *     Acts as timed redirect.
 	 * 
-	 * @param string $Httpequiv
+	 * @param string|ValueInterface $httpequiv
 	 * @return static
 	 */
-	public function setHttpequiv($Httpequiv) {
-		$this->attributes['Http-equiv'] = $Httpequiv;
+	public function setHttpequiv($httpequiv) {
+		$this->attributes['http-equiv'] = $httpequiv;
 		return $this;
 	}
     /**
 	 * Gives the value of the document metadata or pragma directive when the element is used for those purposes. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getContent() {
 		return $this->attributes['content'];
@@ -116,7 +117,7 @@ class Meta implements HtmlElementInterface {
 	/**
 	 * Gives the value of the document metadata or pragma directive when the element is used for those purposes. 
 	 * 
-	 * @param string $content
+	 * @param string|ValueInterface $content
 	 * @return static
 	 */
 	public function setContent($content) {
@@ -126,7 +127,7 @@ class Meta implements HtmlElementInterface {
     /**
 	 * Specifies the character encoding used by the document.
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getCharset() {
 		return $this->attributes['charset'];
@@ -135,7 +136,7 @@ class Meta implements HtmlElementInterface {
 	/**
 	 * Specifies the character encoding used by the document.
 	 * 
-	 * @param string $charset
+	 * @param string|ValueInterface $charset
 	 * @return static
 	 */
 	public function setCharset($charset) {

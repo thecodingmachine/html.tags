@@ -3,6 +3,7 @@ namespace Mouf\Html\Tags;
 
 use Mouf\Html\Tags\GlobalAttributesTrait;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
+use Mouf\Utils\Value\ValueInterface;
 use Mouf\Html\Tags\ChildrenTrait;
 
 /**

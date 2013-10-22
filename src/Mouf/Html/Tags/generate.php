@@ -43,6 +43,12 @@ class $majTag implements HtmlElementInterface {
     	
     	while (isset($data[$i]) && !empty($data[$i])) {
     	
+    		if (!isset($data[$i+1])) {
+    			$data[$i+1] = "";
+    			/*echo "Warning! Tag $majTag is missing a comment for an attribute.\n";
+    			break;*/
+    		}
+    		
     		$file .= "
     /**
 ".turnIntoComment($data[$i+1],"\t")."

@@ -18,22 +18,75 @@ Well for a few reasons:
 How to use it?
 --------------
 
+###Basic usage
+
 Pretty easy. You just create a tag using the `new` keyword and use getters and setters to set attributes. Finally,
 you call the `toHtml()` method to render the tag.
 
-```
+```php
 $div = new Div();
 $div->setId('myDiv');
 $div->toHtml();
 ```
 
+###Fluent interface
 
-children
-fluent interface
-TODO: class: add, array
-style: add, array
-ValueInterface
+The setter are using a fluent interface, so you can chain several setters if you want:
 
+```php
+$input = new Input();
+$input->setType('text')->setName('company')->setLabel('TheCodingMachine');
+$input->toHtml();
+```
+
+###Setting classes and styles
+
+You can set classes and styles using arrays or strings:
+
+```php
+$label = new Label();
+$label->setClasses(array("css-class1 css-class2"));
+$label->setStyles(array("background-color" => "red"));
+$label->toHtml();
+```
+
+You can also add a class or a style using `addClass` or `addStyle`.
+
+```php
+$label->addClass("css-class3");
+$label->addStyle("background-color", "red");
+```
+
+###Managing children
+
+You can add children to your tags using `setChildren` or `addChild`.
+
+```php
+$div->setChildren(array($label, $input));
+```
+
+```php
+$div->addChild($label);
+```
+
+Adding your own custom tags
+---------------------------
+
+You might be interested in adding your owns classes that generate custom HTML code.
+All you have to know is that all the tags are implementing the 
+[`HtmlElementInterface`](http://mouf-php.com/packages/mouf/html.htmlelement/README.md).
+
+This is a simple interface with a single `toHtml()` method.
+
+What is this ValueInterface thing?
+----------------------------------
+
+If you have had a look at the code, you might have noticed that each setter accepts objects
+implementing the [`ValueInterface` interface](http://mouf-php.com/packages/mouf/utils.value.value-interface/README.md).
+
+This is a very powerful feature allowing you to put objects that will be evaluated when
+they are rendered. When the tag is rendered, the `val()` method of the object is called
+and attributed.
 
 Mouf package
 ------------

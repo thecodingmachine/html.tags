@@ -3,6 +3,7 @@ namespace Mouf\Html\Tags;
 
 use Mouf\Html\Tags\GlobalAttributesTrait;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
+use Mouf\Utils\Value\ValueInterface;
 
 /**
  * A &lt;base&gt; tag in HTML.
@@ -17,7 +18,7 @@ class Base implements HtmlElementInterface {
 	 * valid URL potentially surrounded by spaces
 	 * A base element, if it has an href attribute, must come before any other elements in the tree that have attributes defined as taking URLs, except the html element (its manifest attribute isn't affected by base elements).
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getHref() {
 		return $this->attributes['href'];
@@ -27,7 +28,7 @@ class Base implements HtmlElementInterface {
 	 * valid URL potentially surrounded by spaces
 	 * A base element, if it has an href attribute, must come before any other elements in the tree that have attributes defined as taking URLs, except the html element (its manifest attribute isn't affected by base elements).
 	 * 
-	 * @param string $href
+	 * @param string|ValueInterface $href
 	 * @return static
 	 */
 	public function setHref($href) {
@@ -38,7 +39,7 @@ class Base implements HtmlElementInterface {
 	 * valid browsing context name or keyword ( _blank, _self, _parent, or _top)
 	 * The value of the target attribute is used as the default when hyperlinks and forms in the Document cause navigation. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getTarget() {
 		return $this->attributes['target'];
@@ -48,7 +49,7 @@ class Base implements HtmlElementInterface {
 	 * valid browsing context name or keyword ( _blank, _self, _parent, or _top)
 	 * The value of the target attribute is used as the default when hyperlinks and forms in the Document cause navigation. 
 	 * 
-	 * @param string $target
+	 * @param string|ValueInterface $target
 	 * @return static
 	 */
 	public function setTarget($target) {

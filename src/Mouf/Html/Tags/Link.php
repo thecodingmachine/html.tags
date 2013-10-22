@@ -3,6 +3,7 @@ namespace Mouf\Html\Tags;
 
 use Mouf\Html\Tags\GlobalAttributesTrait;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
+use Mouf\Utils\Value\ValueInterface;
 
 /**
  * A &lt;link&gt; tag in HTML.
@@ -17,7 +18,7 @@ class Link implements HtmlElementInterface {
 	 * URL potentially surrounded by spaces
 	 * Specifies a URL that provides the destination of the link. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getHref() {
 		return $this->attributes['href'];
@@ -27,7 +28,7 @@ class Link implements HtmlElementInterface {
 	 * URL potentially surrounded by spaces
 	 * Specifies a URL that provides the destination of the link. 
 	 * 
-	 * @param string $href
+	 * @param string|ValueInterface $href
 	 * @return static
 	 */
 	public function setHref($href) {
@@ -38,7 +39,7 @@ class Link implements HtmlElementInterface {
 	 * set of space-separated tokens
 	 * Specifies a list of tokens that specify the relationship between the document containing the link and the destination indicated by the link.Two categories of links can be created using the link element: Links to external resources and hyperlinks.
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getRel() {
 		return $this->attributes['rel'];
@@ -48,7 +49,7 @@ class Link implements HtmlElementInterface {
 	 * set of space-separated tokens
 	 * Specifies a list of tokens that specify the relationship between the document containing the link and the destination indicated by the link.Two categories of links can be created using the link element: Links to external resources and hyperlinks.
 	 * 
-	 * @param string $rel
+	 * @param string|ValueInterface $rel
 	 * @return static
 	 */
 	public function setRel($rel) {
@@ -65,7 +66,7 @@ class Link implements HtmlElementInterface {
 	 * 
 	 * 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
 		return $this->attributes['media'];
@@ -81,7 +82,7 @@ class Link implements HtmlElementInterface {
 	 * 
 	 * 
 	 * 
-	 * @param string $media
+	 * @param string|ValueInterface $media
 	 * @return static
 	 */
 	public function setMedia($media) {
@@ -93,7 +94,7 @@ class Link implements HtmlElementInterface {
 	 * The language of the destination of the hyperlink.
 	 * A valid language tag, as defined in [BCP47]. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getHreflang() {
 		return $this->attributes['hreflang'];
@@ -104,7 +105,7 @@ class Link implements HtmlElementInterface {
 	 * The language of the destination of the hyperlink.
 	 * A valid language tag, as defined in [BCP47]. 
 	 * 
-	 * @param string $hreflang
+	 * @param string|ValueInterface $hreflang
 	 * @return static
 	 */
 	public function setHreflang($hreflang) {
@@ -116,7 +117,7 @@ class Link implements HtmlElementInterface {
 	 * gives the MIME type of the linked resource.
 	 * The default value for the type attribute, which is used if the attribute is absent, is "text/css". 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getType() {
 		return $this->attributes['type'];
@@ -127,7 +128,7 @@ class Link implements HtmlElementInterface {
 	 * gives the MIME type of the linked resource.
 	 * The default value for the type attribute, which is used if the attribute is absent, is "text/css". 
 	 * 
-	 * @param string $type
+	 * @param string|ValueInterface $type
 	 * @return static
 	 */
 	public function setType($type) {
@@ -138,7 +139,7 @@ class Link implements HtmlElementInterface {
 	 * icon sizes
 	 * The sizes attribute is used with the icon link type. The attribute must not be specified on link elements that do not have a rel attribute that specifies the icon keyword. 
 	 * 
-	 * @return string
+	 * @return string|ValueInterface
 	 */
 	public function getSizes() {
 		return $this->attributes['sizes'];
@@ -148,7 +149,7 @@ class Link implements HtmlElementInterface {
 	 * icon sizes
 	 * The sizes attribute is used with the icon link type. The attribute must not be specified on link elements that do not have a rel attribute that specifies the icon keyword. 
 	 * 
-	 * @param string $sizes
+	 * @param string|ValueInterface $sizes
 	 * @return static
 	 */
 	public function setSizes($sizes) {
