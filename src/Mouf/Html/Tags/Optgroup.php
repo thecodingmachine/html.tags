@@ -47,7 +47,6 @@ class Optgroup implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Its value gives the name of the group, for the purposes of the user interface. 
 	 * 
 	 * @return string|ValueInterface
@@ -57,7 +56,6 @@ class Optgroup implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Its value gives the name of the group, for the purposes of the user interface. 
 	 * 
 	 * @param string|ValueInterface $label

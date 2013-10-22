@@ -52,7 +52,6 @@ class Menu implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Gives the label of the menu. 
 	 * 
 	 * @return string|ValueInterface
@@ -62,7 +61,6 @@ class Menu implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Gives the label of the menu. 
 	 * 
 	 * @param string|ValueInterface $label

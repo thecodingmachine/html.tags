@@ -24,7 +24,6 @@ class Meta implements HtmlElementInterface {
 	use GlobalAttributesTrait;
 
     /**
-	 *     string
 	 *     Sets document metadata.
 	 *         application-name
 	 *         Giving the name of the Web application that the page represents.
@@ -46,7 +45,6 @@ class Meta implements HtmlElementInterface {
 	}
 	
 	/**
-	 *     string
 	 *     Sets document metadata.
 	 *         application-name
 	 *         Giving the name of the Web application that the page represents.

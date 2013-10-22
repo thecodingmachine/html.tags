@@ -15,6 +15,12 @@ Well for a few reasons:
 - You can have autocompletion when using the tags (if you are using a sensible PHP IDE)
 - You can use those tags in dependency injection frameworks (this part might sound completely crazy to you until you learn more about the [Mouf PHP framework](http://mouf-php.com).
 
+List of supported tags
+----------------------
+
+Basically, all the tags supported and not deprecated in HTML5. You can get a 
+[complete list on the W3C wiki](http://www.w3.org/community/webed/wiki/HTML/Elements).
+
 How to use it?
 --------------
 

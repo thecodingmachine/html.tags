@@ -36,7 +36,6 @@ class Option implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Provides a label for element.
 	 * If there isn't, the label of an option element is the textContent of the element. 
 	 * 
@@ -47,7 +46,6 @@ class Option implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Provides a label for element.
 	 * If there isn't, the label of an option element is the textContent of the element. 
 	 * 
@@ -59,7 +57,6 @@ class Option implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Provides a value for element.
 	 * If there isn't, the value of an option element is the textContent of the element. 
 	 * 
@@ -70,7 +67,6 @@ class Option implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Provides a value for element.
 	 * If there isn't, the value of an option element is the textContent of the element. 
 	 * 

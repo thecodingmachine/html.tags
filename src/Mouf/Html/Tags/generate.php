@@ -89,12 +89,26 @@ class $majTag implements HtmlElementInterface {
 
 
 function turnIntoComment($comment, $prepend = "") {
+	$firstline = strtok($comment, "\n");
+	if (trim($firstline) == 'string') {
+		$comment = strtok("");
+	}
+	
 	$comments = explode("\n", $comment);
 	$comments = array_map(function($line) use ($prepend) {
 		return $prepend.' * '.$line;
 	}, $comments);
 	
 	return implode("\n", $comments);
+}
+
+function getCommentType($comment) {
+	$firstline = trim(strtok($comment, "\n"));
+	if ($firstline == "boolean") {
+		return "boolean";
+	} else {
+		return "string";
+	}
 }
 
 function advanceducfirst($name) {

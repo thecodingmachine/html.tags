@@ -53,7 +53,6 @@ class Command implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Gives the name of the command, as shown to the user.
 	 * The label attribute must be specified and must have a value that is not the empty string. 
 	 * 
@@ -64,7 +63,6 @@ class Command implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Gives the name of the command, as shown to the user.
 	 * The label attribute must be specified and must have a value that is not the empty string. 
 	 * 
@@ -147,7 +145,6 @@ class Command implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * Gives the name of the group of commands that will be toggled when the command itself is toggled, for commands whose type attribute has the value "radio". 
 	 * 
 	 * @return string|ValueInterface
@@ -157,7 +154,6 @@ class Command implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * Gives the name of the group of commands that will be toggled when the command itself is toggled, for commands whose type attribute has the value "radio". 
 	 * 
 	 * @param string|ValueInterface $radiogroup

@@ -69,7 +69,6 @@ class Keygen implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * string
 	 * A challenge string that is submitted along with the public key.
 	 * 
 	 * @return string|ValueInterface
@@ -79,7 +78,6 @@ class Keygen implements HtmlElementInterface {
 	}
 	
 	/**
-	 * string
 	 * A challenge string that is submitted along with the public key.
 	 * 
 	 * @param string|ValueInterface $challenge
