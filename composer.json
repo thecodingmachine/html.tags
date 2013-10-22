@@ -1,0 +1,37 @@
+{
+	"name" : "mouf/html.tags",
+	"description" : "This package contains a pure PHP object representation of HTML5 tags. There is one class for each existing HTML tag, and one getter/setter per attribute.",
+	"type" : "mouf-library",
+	"authors" : [{
+			"name" : "David Négrier",
+			"email" : "d.negrier@thecodingmachine.com",
+			"homepage" : "http://mouf-php.com"
+		}
+	],
+	"keywords" : [
+		"html",
+		"html5",
+		"tohtml",
+		"interface",
+		"tags"
+	],
+	"homepage" : "http://mouf-php.com/packages/mouf/html.tags",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"php" : ">=5.4.4",
+		"mouf/html.htmlelement" : "~2.0",
+		"mouf/utils.value.value-interface" : "~1.0"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Mouf" : "src/"
+		}
+	},
+	"extra" : {
+		"mouf" : {
+			"logo" : "logo.png"
+		}
+	}
+}
