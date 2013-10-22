@@ -2,6 +2,7 @@
 namespace Mouf\Html\Tags;
 
 use Mouf\Html\HtmlElement\HtmlElementInterface;
+use Mouf\Html\HtmlElement\HtmlString;
 
 /**
  * A trait that defines an object can have HTML children
@@ -48,6 +49,14 @@ trait ChildrenTrait {
 		return $this;
 	}
 	
+	/**
+	 * Append some text in the tag.
+	 * 
+	 * @param string $text
+	 */
+	public function addText($text) {
+		$this->children[] = new HtmlString($text);
+	}
 	
 	/**
 	 * Renders HTML attributes.

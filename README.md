@@ -75,6 +75,22 @@ $div->setChildren(array($label, $input));
 $div->addChild($label);
 ```
 
+###Adding text to a tag
+
+Use the `addText` to add text to a tag.
+
+```php
+$p = new Paragraph();
+$p->addText("This is my text");
+```
+
+Note: this is similar to creating a `HtmlString` instance and adding it to the node:
+
+```php
+// Similar to:
+$p->addChild(new HtmlString("This is my text"));
+```
+
 Adding your own custom tags
 ---------------------------
 
