@@ -18,9 +18,10 @@ use Mouf\Html\Tags\ChildrenTrait;
  * 
  * @author David Négrier <david@mouf-php.com>
  */
-class Var implements HtmlElementInterface {
+class VarTag implements HtmlElementInterface {
 	use ChildrenTrait;
 	use GlobalAttributesTrait;
+
 
 	/**
 	 * Renders the object in HTML.
