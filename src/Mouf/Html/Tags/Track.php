@@ -31,7 +31,7 @@ class Track implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getKind() {
-		return $this->attributes['kind'];
+		return isset($this->attributes['kind'])?$this->attributes['kind']:null;
 	}
 	
 	/**
@@ -65,7 +65,7 @@ class Track implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -88,7 +88,7 @@ class Track implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCharset() {
-		return $this->attributes['charset'];
+		return isset($this->attributes['charset'])?$this->attributes['charset']:null;
 	}
 	
 	/**
@@ -108,7 +108,7 @@ class Track implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrclang() {
-		return $this->attributes['srclang'];
+		return isset($this->attributes['srclang'])?$this->attributes['srclang']:null;
 	}
 	
 	/**
@@ -128,7 +128,7 @@ class Track implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLabel() {
-		return $this->attributes['label'];
+		return isset($this->attributes['label'])?$this->attributes['label']:null;
 	}
 	
 	/**
@@ -146,6 +146,6 @@ class Track implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<track '.$this->getAttributes().'>'.$this->renderChildren().'</track>';
+		echo '<track '.$this->getAttributes().'/>';
 	}
 }

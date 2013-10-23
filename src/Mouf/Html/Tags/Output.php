@@ -21,7 +21,7 @@ class Output implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -43,7 +43,7 @@ class Output implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFor() {
-		return $this->attributes['for'];
+		return isset($this->attributes['for'])?$this->attributes['for']:null;
 	}
 	
 	/**
@@ -66,7 +66,7 @@ class Output implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -86,6 +86,6 @@ class Output implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<output '.$this->getAttributes().'>'.$this->renderChildren().'</output>';
+		echo '<output '.$this->getAttributes().'/>';
 	}
 }

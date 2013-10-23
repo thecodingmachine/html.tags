@@ -22,7 +22,7 @@ class Canvas implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -41,7 +41,7 @@ class Canvas implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**

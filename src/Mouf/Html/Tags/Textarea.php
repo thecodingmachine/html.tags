@@ -23,7 +23,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -44,7 +44,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutofocus() {
-		return $this->attributes['autofocus'];
+		return isset($this->attributes['autofocus'])?$this->attributes['autofocus']:null;
 	}
 	
 	/**
@@ -65,7 +65,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCols() {
-		return $this->attributes['cols'];
+		return isset($this->attributes['cols'])?$this->attributes['cols']:null;
 	}
 	
 	/**
@@ -86,7 +86,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRows() {
-		return $this->attributes['rows'];
+		return isset($this->attributes['rows'])?$this->attributes['rows']:null;
 	}
 	
 	/**
@@ -107,7 +107,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -129,7 +129,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -155,7 +155,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPlaceholder() {
-		return $this->attributes['placeholder'];
+		return isset($this->attributes['placeholder'])?$this->attributes['placeholder']:null;
 	}
 	
 	/**
@@ -180,7 +180,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getReadonly() {
-		return $this->attributes['readonly'];
+		return isset($this->attributes['readonly'])?$this->attributes['readonly']:null;
 	}
 	
 	/**
@@ -201,7 +201,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRequired() {
-		return $this->attributes['required'];
+		return isset($this->attributes['required'])?$this->attributes['required']:null;
 	}
 	
 	/**
@@ -227,7 +227,7 @@ class Textarea implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWrap() {
-		return $this->attributes['wrap'];
+		return isset($this->attributes['wrap'])?$this->attributes['wrap']:null;
 	}
 	
 	/**

@@ -27,7 +27,7 @@ class Details implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getOpen() {
-		return $this->attributes['open'];
+		return isset($this->attributes['open'])?$this->attributes['open']:null;
 	}
 	
 	/**

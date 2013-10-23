@@ -43,7 +43,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -85,7 +85,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -104,7 +104,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**
@@ -123,7 +123,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAccept() {
-		return $this->attributes['accept'];
+		return isset($this->attributes['accept'])?$this->attributes['accept']:null;
 	}
 	
 	/**
@@ -142,7 +142,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAlt() {
-		return $this->attributes['alt'];
+		return isset($this->attributes['alt'])?$this->attributes['alt']:null;
 	}
 	
 	/**
@@ -161,7 +161,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutocomplete() {
-		return $this->attributes['autocomplete'];
+		return isset($this->attributes['autocomplete'])?$this->attributes['autocomplete']:null;
 	}
 	
 	/**
@@ -180,7 +180,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getChecked() {
-		return $this->attributes['checked'];
+		return isset($this->attributes['checked'])?$this->attributes['checked']:null;
 	}
 	
 	/**
@@ -199,7 +199,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFormaction() {
-		return $this->attributes['formaction'];
+		return isset($this->attributes['formaction'])?$this->attributes['formaction']:null;
 	}
 	
 	/**
@@ -218,7 +218,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFormenctype() {
-		return $this->attributes['formenctype'];
+		return isset($this->attributes['formenctype'])?$this->attributes['formenctype']:null;
 	}
 	
 	/**
@@ -237,7 +237,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFormmethod() {
-		return $this->attributes['formmethod'];
+		return isset($this->attributes['formmethod'])?$this->attributes['formmethod']:null;
 	}
 	
 	/**
@@ -256,7 +256,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFormnovalidate() {
-		return $this->attributes['formnovalidate'];
+		return isset($this->attributes['formnovalidate'])?$this->attributes['formnovalidate']:null;
 	}
 	
 	/**
@@ -275,7 +275,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFormtarget() {
-		return $this->attributes['formtarget'];
+		return isset($this->attributes['formtarget'])?$this->attributes['formtarget']:null;
 	}
 	
 	/**
@@ -294,7 +294,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**
@@ -313,7 +313,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -332,7 +332,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getList() {
-		return $this->attributes['list'];
+		return isset($this->attributes['list'])?$this->attributes['list']:null;
 	}
 	
 	/**
@@ -351,7 +351,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMax() {
-		return $this->attributes['max'];
+		return isset($this->attributes['max'])?$this->attributes['max']:null;
 	}
 	
 	/**
@@ -370,7 +370,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMaxlength() {
-		return $this->attributes['maxlength'];
+		return isset($this->attributes['maxlength'])?$this->attributes['maxlength']:null;
 	}
 	
 	/**
@@ -389,7 +389,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMin() {
-		return $this->attributes['min'];
+		return isset($this->attributes['min'])?$this->attributes['min']:null;
 	}
 	
 	/**
@@ -408,7 +408,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMultiple() {
-		return $this->attributes['multiple'];
+		return isset($this->attributes['multiple'])?$this->attributes['multiple']:null;
 	}
 	
 	/**
@@ -427,7 +427,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPattern() {
-		return $this->attributes['pattern'];
+		return isset($this->attributes['pattern'])?$this->attributes['pattern']:null;
 	}
 	
 	/**
@@ -446,7 +446,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPlaceholder() {
-		return $this->attributes['placeholder'];
+		return isset($this->attributes['placeholder'])?$this->attributes['placeholder']:null;
 	}
 	
 	/**
@@ -465,7 +465,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getReadonly() {
-		return $this->attributes['readonly'];
+		return isset($this->attributes['readonly'])?$this->attributes['readonly']:null;
 	}
 	
 	/**
@@ -484,7 +484,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRequired() {
-		return $this->attributes['required'];
+		return isset($this->attributes['required'])?$this->attributes['required']:null;
 	}
 	
 	/**
@@ -503,7 +503,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSize() {
-		return $this->attributes['size'];
+		return isset($this->attributes['size'])?$this->attributes['size']:null;
 	}
 	
 	/**
@@ -522,7 +522,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -541,7 +541,7 @@ class Input implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getStep() {
-		return $this->attributes['step'];
+		return isset($this->attributes['step'])?$this->attributes['step']:null;
 	}
 	
 	/**
@@ -559,6 +559,6 @@ class Input implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<input '.$this->getAttributes().'>'.$this->renderChildren().'</input>';
+		echo '<input '.$this->getAttributes().'/>';
 	}
 }

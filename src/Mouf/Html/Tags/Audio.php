@@ -22,7 +22,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutoplay() {
-		return $this->attributes['autoplay'];
+		return isset($this->attributes['autoplay'])?$this->attributes['autoplay']:null;
 	}
 	
 	/**
@@ -68,7 +68,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPreload() {
-		return $this->attributes['preload'];
+		return isset($this->attributes['preload'])?$this->attributes['preload']:null;
 	}
 	
 	/**
@@ -94,7 +94,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getControls() {
-		return $this->attributes['controls'];
+		return isset($this->attributes['controls'])?$this->attributes['controls']:null;
 	}
 	
 	/**
@@ -115,7 +115,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLoop() {
-		return $this->attributes['loop'];
+		return isset($this->attributes['loop'])?$this->attributes['loop']:null;
 	}
 	
 	/**
@@ -135,7 +135,7 @@ class Audio implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMediagroup() {
-		return $this->attributes['mediagroup'];
+		return isset($this->attributes['mediagroup'])?$this->attributes['mediagroup']:null;
 	}
 	
 	/**

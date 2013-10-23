@@ -28,7 +28,7 @@ class Label implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getFor() {
-		return $this->attributes['for'];
+		return isset($this->attributes['for'])?$this->attributes['for']:null;
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class Label implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**

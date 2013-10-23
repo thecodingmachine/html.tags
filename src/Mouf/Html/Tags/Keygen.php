@@ -27,7 +27,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -51,7 +51,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutofocus() {
-		return $this->attributes['autofocus'];
+		return isset($this->attributes['autofocus'])?$this->attributes['autofocus']:null;
 	}
 	
 	/**
@@ -74,7 +74,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getChallenge() {
-		return $this->attributes['challenge'];
+		return isset($this->attributes['challenge'])?$this->attributes['challenge']:null;
 	}
 	
 	/**
@@ -94,7 +94,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -119,7 +119,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -144,7 +144,7 @@ class Keygen implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getKeytype() {
-		return $this->attributes['keytype'];
+		return isset($this->attributes['keytype'])?$this->attributes['keytype']:null;
 	}
 	
 	/**
@@ -163,6 +163,6 @@ class Keygen implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<keygen '.$this->getAttributes().'>'.$this->renderChildren().'</keygen>';
+		echo '<keygen '.$this->getAttributes().'/>';
 	}
 }

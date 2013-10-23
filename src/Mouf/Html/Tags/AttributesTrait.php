@@ -1,6 +1,7 @@
 <?php
 namespace Mouf\Html\Tags;
 
+use Mouf\Utils\Value\ValueUtils;
 /**
  * A trait that defines basic HTML attributes 
  * 

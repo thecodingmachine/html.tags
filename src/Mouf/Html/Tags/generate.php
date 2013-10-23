@@ -56,7 +56,7 @@ class $majTag implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function get".advanceducfirst($data[$i])."() {
-		return \$this->attributes['".$data[$i]."'];
+		return isset(\$this->attributes['".$data[$i]."'])?\$this->attributes['".$data[$i]."']:null;
 	}
 	
 	/**
@@ -78,7 +78,7 @@ class $majTag implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<$tag '.\$this->getAttributes().'>'.\$this->renderChildren().'</$tag>';
+		echo '<$tag '.\$this->getAttributes().'".($hasChildren?">'.\$this->renderChildren().'</$tag>":"/>")."';
 	}
 }";
         file_put_contents($majTag.'.php', $file);

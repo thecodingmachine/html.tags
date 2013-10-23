@@ -23,7 +23,7 @@ class Style implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
-		return $this->attributes['media'];
+		return isset($this->attributes['media'])?$this->attributes['media']:null;
 	}
 	
 	/**
@@ -45,7 +45,7 @@ class Style implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -67,7 +67,7 @@ class Style implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getScoped() {
-		return $this->attributes['scoped'];
+		return isset($this->attributes['scoped'])?$this->attributes['scoped']:null;
 	}
 	
 	/**

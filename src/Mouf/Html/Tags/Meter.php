@@ -39,7 +39,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**
@@ -61,7 +61,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMin() {
-		return $this->attributes['min'];
+		return isset($this->attributes['min'])?$this->attributes['min']:null;
 	}
 	
 	/**
@@ -82,7 +82,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMax() {
-		return $this->attributes['max'];
+		return isset($this->attributes['max'])?$this->attributes['max']:null;
 	}
 	
 	/**
@@ -103,7 +103,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLow() {
-		return $this->attributes['low'];
+		return isset($this->attributes['low'])?$this->attributes['low']:null;
 	}
 	
 	/**
@@ -127,7 +127,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHigh() {
-		return $this->attributes['high'];
+		return isset($this->attributes['high'])?$this->attributes['high']:null;
 	}
 	
 	/**
@@ -157,7 +157,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getOptimum() {
-		return $this->attributes['optimum'];
+		return isset($this->attributes['optimum'])?$this->attributes['optimum']:null;
 	}
 	
 	/**
@@ -188,7 +188,7 @@ class Meter implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**

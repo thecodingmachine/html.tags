@@ -28,7 +28,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAction() {
-		return $this->attributes['action'];
+		return isset($this->attributes['action'])?$this->attributes['action']:null;
 	}
 	
 	/**
@@ -54,7 +54,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMethod() {
-		return $this->attributes['method'];
+		return isset($this->attributes['method'])?$this->attributes['method']:null;
 	}
 	
 	/**
@@ -86,7 +86,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutocomplete() {
-		return $this->attributes['autocomplete'];
+		return isset($this->attributes['autocomplete'])?$this->attributes['autocomplete']:null;
 	}
 	
 	/**
@@ -117,7 +117,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getEnctype() {
-		return $this->attributes['enctype'];
+		return isset($this->attributes['enctype'])?$this->attributes['enctype']:null;
 	}
 	
 	/**
@@ -142,7 +142,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAcceptcharset() {
-		return $this->attributes['accept-charset'];
+		return isset($this->attributes['accept-charset'])?$this->attributes['accept-charset']:null;
 	}
 	
 	/**
@@ -164,7 +164,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -186,7 +186,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getNovalidate() {
-		return $this->attributes['novalidate'];
+		return isset($this->attributes['novalidate'])?$this->attributes['novalidate']:null;
 	}
 	
 	/**
@@ -205,7 +205,7 @@ class Form implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getTarget() {
-		return $this->attributes['target'];
+		return isset($this->attributes['target'])?$this->attributes['target']:null;
 	}
 	
 	/**

@@ -22,7 +22,7 @@ class Td implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getColspan() {
-		return $this->attributes['colspan'];
+		return isset($this->attributes['colspan'])?$this->attributes['colspan']:null;
 	}
 	
 	/**
@@ -41,7 +41,7 @@ class Td implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRowspan() {
-		return $this->attributes['rowspan'];
+		return isset($this->attributes['rowspan'])?$this->attributes['rowspan']:null;
 	}
 	
 	/**
@@ -60,7 +60,7 @@ class Td implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeaders() {
-		return $this->attributes['headers'];
+		return isset($this->attributes['headers'])?$this->attributes['headers']:null;
 	}
 	
 	/**

@@ -31,7 +31,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -59,7 +59,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLabel() {
-		return $this->attributes['label'];
+		return isset($this->attributes['label'])?$this->attributes['label']:null;
 	}
 	
 	/**
@@ -80,7 +80,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getIcon() {
-		return $this->attributes['icon'];
+		return isset($this->attributes['icon'])?$this->attributes['icon']:null;
 	}
 	
 	/**
@@ -101,7 +101,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -126,7 +126,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getChecked() {
-		return $this->attributes['checked'];
+		return isset($this->attributes['checked'])?$this->attributes['checked']:null;
 	}
 	
 	/**
@@ -150,7 +150,7 @@ class Command implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRadiogroup() {
-		return $this->attributes['radiogroup'];
+		return isset($this->attributes['radiogroup'])?$this->attributes['radiogroup']:null;
 	}
 	
 	/**
@@ -168,6 +168,6 @@ class Command implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<command '.$this->getAttributes().'>'.$this->renderChildren().'</command>';
+		echo '<command '.$this->getAttributes().'/>';
 	}
 }

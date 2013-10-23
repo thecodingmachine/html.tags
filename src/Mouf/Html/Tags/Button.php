@@ -23,7 +23,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -44,7 +44,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutofocus() {
-		return $this->attributes['autofocus'];
+		return isset($this->attributes['autofocus'])?$this->attributes['autofocus']:null;
 	}
 	
 	/**
@@ -68,7 +68,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -93,7 +93,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -115,7 +115,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -136,7 +136,7 @@ class Button implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**

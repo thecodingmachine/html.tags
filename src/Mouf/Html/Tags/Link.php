@@ -21,7 +21,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHref() {
-		return $this->attributes['href'];
+		return isset($this->attributes['href'])?$this->attributes['href']:null;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRel() {
-		return $this->attributes['rel'];
+		return isset($this->attributes['rel'])?$this->attributes['rel']:null;
 	}
 	
 	/**
@@ -69,7 +69,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
-		return $this->attributes['media'];
+		return isset($this->attributes['media'])?$this->attributes['media']:null;
 	}
 	
 	/**
@@ -97,7 +97,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHreflang() {
-		return $this->attributes['hreflang'];
+		return isset($this->attributes['hreflang'])?$this->attributes['hreflang']:null;
 	}
 	
 	/**
@@ -120,7 +120,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -142,7 +142,7 @@ class Link implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSizes() {
-		return $this->attributes['sizes'];
+		return isset($this->attributes['sizes'])?$this->attributes['sizes']:null;
 	}
 	
 	/**
@@ -161,6 +161,6 @@ class Link implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<link '.$this->getAttributes().'>'.$this->renderChildren().'</link>';
+		echo '<link '.$this->getAttributes().'/>';
 	}
 }

@@ -29,7 +29,7 @@ class Optgroup implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -52,7 +52,7 @@ class Optgroup implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLabel() {
-		return $this->attributes['label'];
+		return isset($this->attributes['label'])?$this->attributes['label']:null;
 	}
 	
 	/**

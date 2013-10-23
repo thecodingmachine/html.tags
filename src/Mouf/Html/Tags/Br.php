@@ -24,6 +24,6 @@ class Br implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<br '.$this->getAttributes().'>'.$this->renderChildren().'</br>';
+		echo '<br '.$this->getAttributes().'/>';
 	}
 }

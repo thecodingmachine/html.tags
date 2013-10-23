@@ -30,7 +30,7 @@ class Menu implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -57,7 +57,7 @@ class Menu implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLabel() {
-		return $this->attributes['label'];
+		return isset($this->attributes['label'])?$this->attributes['label']:null;
 	}
 	
 	/**

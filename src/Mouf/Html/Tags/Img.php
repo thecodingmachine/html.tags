@@ -37,7 +37,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -57,7 +57,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAlt() {
-		return $this->attributes['alt'];
+		return isset($this->attributes['alt'])?$this->attributes['alt']:null;
 	}
 	
 	/**
@@ -80,7 +80,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getUsemap() {
-		return $this->attributes['usemap'];
+		return isset($this->attributes['usemap'])?$this->attributes['usemap']:null;
 	}
 	
 	/**
@@ -102,7 +102,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getIsmap() {
-		return $this->attributes['ismap'];
+		return isset($this->attributes['ismap'])?$this->attributes['ismap']:null;
 	}
 	
 	/**
@@ -121,7 +121,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -140,7 +140,7 @@ class Img implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**
@@ -158,6 +158,6 @@ class Img implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<img '.$this->getAttributes().'>'.$this->renderChildren().'</img>';
+		echo '<img '.$this->getAttributes().'/>';
 	}
 }

@@ -27,7 +27,7 @@ class Q implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCite() {
-		return $this->attributes['cite'];
+		return isset($this->attributes['cite'])?$this->attributes['cite']:null;
 	}
 	
 	/**

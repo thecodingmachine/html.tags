@@ -20,7 +20,7 @@ class Source implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -39,7 +39,7 @@ class Source implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -58,7 +58,7 @@ class Source implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
-		return $this->attributes['media'];
+		return isset($this->attributes['media'])?$this->attributes['media']:null;
 	}
 	
 	/**
@@ -76,6 +76,6 @@ class Source implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<source '.$this->getAttributes().'>'.$this->renderChildren().'</source>';
+		echo '<source '.$this->getAttributes().'/>';
 	}
 }

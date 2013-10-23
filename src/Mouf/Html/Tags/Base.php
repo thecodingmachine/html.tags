@@ -21,7 +21,7 @@ class Base implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHref() {
-		return $this->attributes['href'];
+		return isset($this->attributes['href'])?$this->attributes['href']:null;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ class Base implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getTarget() {
-		return $this->attributes['target'];
+		return isset($this->attributes['target'])?$this->attributes['target']:null;
 	}
 	
 	/**
@@ -61,6 +61,6 @@ class Base implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<base '.$this->getAttributes().'>'.$this->renderChildren().'</base>';
+		echo '<base '.$this->getAttributes().'/>';
 	}
 }

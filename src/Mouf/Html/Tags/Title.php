@@ -19,6 +19,6 @@ class Title implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<title '.$this->getAttributes().'>'.$this->renderChildren().'</title>';
+		echo '<title '.$this->getAttributes().'/>';
 	}
 }

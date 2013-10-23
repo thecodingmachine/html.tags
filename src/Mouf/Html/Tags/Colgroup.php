@@ -26,7 +26,7 @@ class Colgroup implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSpan() {
-		return $this->attributes['span'];
+		return isset($this->attributes['span'])?$this->attributes['span']:null;
 	}
 	
 	/**

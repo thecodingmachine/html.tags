@@ -25,7 +25,7 @@ class Ins implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCite() {
-		return $this->attributes['cite'];
+		return isset($this->attributes['cite'])?$this->attributes['cite']:null;
 	}
 	
 	/**
@@ -44,7 +44,7 @@ class Ins implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDatetime() {
-		return $this->attributes['datetime'];
+		return isset($this->attributes['datetime'])?$this->attributes['datetime']:null;
 	}
 	
 	/**

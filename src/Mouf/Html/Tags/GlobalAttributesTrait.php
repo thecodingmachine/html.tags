@@ -10,33 +10,13 @@ trait GlobalAttributesTrait {
 	use AttributesTrait;
 	
 	/**
-	 * Specifies a shortcut key to activate/focus an element.
-	 * 
-	 * @return string
-	 */
-	public function getAccesskey() {
-		return $this->attributes['accesskey'];
-	}
-	
-	/**
-	 * Specifies a shortcut key to activate/focus an element
-	 * 
-	 * @param string $accesskey
-	 * @return static
-	 */
-	public function setAccesskey($accesskey) {
-		$this->attributes['accesskey'] = $accesskey;
-		return $this;
-	}
-	
-	/**
 	 * Specifies one or more classnames for an element (refers to a class in a style sheet)
 	 * Key and values both contain the class.
 	 * 
 	 * @return array<string, string>
 	 */
 	public function getClasses() {
-		return $this->attributes['class'];
+		return isset($this->attributes['class'])?$this->attributes['class']:null;
 	}
 	
 	/**
@@ -78,11 +58,31 @@ trait GlobalAttributesTrait {
 	}
 	
 	/**
+	 * Specifies a unique id for an element
+	 *
+	 * @return string
+	 */
+	public function getId() {
+		return isset($this->attributes['id'])?$this->attributes['id']:null;
+	}
+	
+	/**
+	 * Specifies a unique id for an element
+	 *
+	 * @param string $id
+	 * @return static
+	 */
+	public function setId($id) {
+		$this->attributes['id'] = $id;
+		return $this;
+	}
+	
+	/**
 	 * Specifies whether the content of an element is editable or not
 	 * @return boolean
 	 */
 	public function isContenteditable() {
-		return $this->attributes['contenteditable'];
+		return isset($this->attributes[''])?$this->attributes['contenteditable']:null;
 	}
 	
 	/**
@@ -101,7 +101,7 @@ trait GlobalAttributesTrait {
 	 * @return array<string, string>
 	 */
 	public function getDataAttributes() {
-		return $this->attributes['data'];
+		return isset($this->attributes[''])?$this->attributes['data']:null;
 	}
 	
 	/**
@@ -139,12 +139,33 @@ trait GlobalAttributesTrait {
 	}
 	
 	/**
+	 * Specifies a shortcut key to activate/focus an element.
+	 *
+	 * @return string
+	 */
+	public function getAccesskey() {
+		return isset($this->attributes['accesskey'])?$this->attributes['accesskey']:null;
+	}
+	
+	/**
+	 * Specifies a shortcut key to activate/focus an element
+	 *
+	 * @param string $accesskey
+	 * @return static
+	 */
+	public function setAccesskey($accesskey) {
+		$this->attributes['accesskey'] = $accesskey;
+		return $this;
+	}
+	
+	
+	/**
 	 * Specifies the text direction for the content in an element
 	 *
 	 * @return string
 	 */
 	public function getDir() {
-		return $this->attributes['dir'];
+		return isset($this->attributes['dir'])?$this->attributes['dir']:null;
 	}
 	
 	/**
@@ -163,7 +184,7 @@ trait GlobalAttributesTrait {
 	 * @return boolean
 	 */
 	public function isDraggable() {
-		return $this->attributes['draggable'];
+		return isset($this->attributes['draggable'])?$this->attributes['draggable']:null;
 	}
 	
 	/**
@@ -182,7 +203,7 @@ trait GlobalAttributesTrait {
 	 * @return string the kind of marker
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -201,7 +222,7 @@ trait GlobalAttributesTrait {
 	 * @return boolean
 	 */
 	public function isHidden() {
-		return $this->attributes['hidden'];
+		return isset($this->attributes['hidden'])?$this->attributes['hidden']:null;
 	}
 	
 	/**
@@ -215,32 +236,12 @@ trait GlobalAttributesTrait {
 	}
 	
 	/**
-	 * Specifies a unique id for an element
-	 *
-	 * @return string
-	 */
-	public function getId() {
-		return $this->attributes['id'];
-	}
-	
-	/**
-	 * Specifies a unique id for an element
-	 *
-	 * @param string $id
-	 * @return static
-	 */
-	public function setId($id) {
-		$this->attributes['id'] = $id;
-		return $this;
-	}
-	
-	/**
 	 * Specifies the language of the element's content
 	 *
 	 * @return string
 	 */
 	public function getLang() {
-		return $this->attributes['lang'];
+		return isset($this->attributes['lang'])?$this->attributes['lang']:null;
 	}
 	
 	/**
@@ -259,7 +260,7 @@ trait GlobalAttributesTrait {
 	 * @return boolean
 	 */
 	public function isSpellcheck() {
-		return $this->attributes['spellcheck'];
+		return isset($this->attributes['spellcheck'])?$this->attributes['spellcheck']:null;
 	}
 	
 	/**
@@ -278,7 +279,7 @@ trait GlobalAttributesTrait {
 	 * @return array<string, string>
 	 */
 	public function getStyles() {
-		return $this->attributes['style'];
+		return isset($this->attributes['style'])?$this->attributes['style']:null;
 	}
 	
 	/**
@@ -321,7 +322,7 @@ trait GlobalAttributesTrait {
 	 * @return string
 	 */
 	public function getTitle() {
-		return $this->attributes['title'];
+		return isset($this->attributes['title'])?$this->attributes['title']:null;
 	}
 	
 	/**

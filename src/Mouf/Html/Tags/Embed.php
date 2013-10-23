@@ -28,7 +28,7 @@ class Embed implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -47,7 +47,7 @@ class Embed implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -66,7 +66,7 @@ class Embed implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -85,7 +85,7 @@ class Embed implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**

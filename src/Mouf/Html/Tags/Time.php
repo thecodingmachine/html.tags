@@ -42,7 +42,7 @@ class Time implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDatetime() {
-		return $this->attributes['datetime'];
+		return isset($this->attributes['datetime'])?$this->attributes['datetime']:null;
 	}
 	
 	/**

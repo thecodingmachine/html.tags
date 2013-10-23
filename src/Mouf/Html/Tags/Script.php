@@ -34,7 +34,7 @@ class Script implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -57,7 +57,7 @@ class Script implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAsync() {
-		return $this->attributes['async'];
+		return isset($this->attributes['async'])?$this->attributes['async']:null;
 	}
 	
 	/**
@@ -76,7 +76,7 @@ class Script implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDefer() {
-		return $this->attributes['defer'];
+		return isset($this->attributes['defer'])?$this->attributes['defer']:null;
 	}
 	
 	/**
@@ -114,7 +114,7 @@ class Script implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -153,7 +153,7 @@ class Script implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCharset() {
-		return $this->attributes['charset'];
+		return isset($this->attributes['charset'])?$this->attributes['charset']:null;
 	}
 	
 	/**

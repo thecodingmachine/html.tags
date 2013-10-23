@@ -21,7 +21,7 @@ class Option implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ class Option implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLabel() {
-		return $this->attributes['label'];
+		return isset($this->attributes['label'])?$this->attributes['label']:null;
 	}
 	
 	/**
@@ -63,7 +63,7 @@ class Option implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**
@@ -84,7 +84,7 @@ class Option implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSelected() {
-		return $this->attributes['selected'];
+		return isset($this->attributes['selected'])?$this->attributes['selected']:null;
 	}
 	
 	/**
@@ -103,6 +103,6 @@ class Option implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<option '.$this->getAttributes().'>'.$this->renderChildren().'</option>';
+		echo '<option '.$this->getAttributes().'/>';
 	}
 }

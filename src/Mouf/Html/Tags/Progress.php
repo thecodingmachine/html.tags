@@ -30,7 +30,7 @@ class Progress implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**
@@ -53,7 +53,7 @@ class Progress implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMax() {
-		return $this->attributes['max'];
+		return isset($this->attributes['max'])?$this->attributes['max']:null;
 	}
 	
 	/**
@@ -79,7 +79,7 @@ class Progress implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**

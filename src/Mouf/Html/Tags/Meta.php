@@ -41,7 +41,7 @@ class Meta implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -81,7 +81,7 @@ class Meta implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHttpequiv() {
-		return $this->attributes['http-equiv'];
+		return isset($this->attributes['http-equiv'])?$this->attributes['http-equiv']:null;
 	}
 	
 	/**
@@ -109,7 +109,7 @@ class Meta implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getContent() {
-		return $this->attributes['content'];
+		return isset($this->attributes['content'])?$this->attributes['content']:null;
 	}
 	
 	/**
@@ -128,7 +128,7 @@ class Meta implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCharset() {
-		return $this->attributes['charset'];
+		return isset($this->attributes['charset'])?$this->attributes['charset']:null;
 	}
 	
 	/**
@@ -146,6 +146,6 @@ class Meta implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<meta '.$this->getAttributes().'>'.$this->renderChildren().'</meta>';
+		echo '<meta '.$this->getAttributes().'/>';
 	}
 }

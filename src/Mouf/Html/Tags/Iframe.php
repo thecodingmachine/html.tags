@@ -26,7 +26,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -45,7 +45,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrcdoc() {
-		return $this->attributes['srcdoc'];
+		return isset($this->attributes['srcdoc'])?$this->attributes['srcdoc']:null;
 	}
 	
 	/**
@@ -64,7 +64,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -99,7 +99,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSandbox() {
-		return $this->attributes['sandbox'];
+		return isset($this->attributes['sandbox'])?$this->attributes['sandbox']:null;
 	}
 	
 	/**
@@ -134,7 +134,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSeamless() {
-		return $this->attributes['seamless'];
+		return isset($this->attributes['seamless'])?$this->attributes['seamless']:null;
 	}
 	
 	/**
@@ -153,7 +153,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -172,7 +172,7 @@ class Iframe implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**
@@ -190,6 +190,6 @@ class Iframe implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<iframe '.$this->getAttributes().'>'.$this->renderChildren().'</iframe>';
+		echo '<iframe '.$this->getAttributes().'/>';
 	}
 }

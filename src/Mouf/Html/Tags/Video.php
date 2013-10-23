@@ -25,7 +25,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSrc() {
-		return $this->attributes['src'];
+		return isset($this->attributes['src'])?$this->attributes['src']:null;
 	}
 	
 	/**
@@ -45,7 +45,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutoplay() {
-		return $this->attributes['autoplay'];
+		return isset($this->attributes['autoplay'])?$this->attributes['autoplay']:null;
 	}
 	
 	/**
@@ -71,7 +71,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPreload() {
-		return $this->attributes['preload'];
+		return isset($this->attributes['preload'])?$this->attributes['preload']:null;
 	}
 	
 	/**
@@ -97,7 +97,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getControls() {
-		return $this->attributes['controls'];
+		return isset($this->attributes['controls'])?$this->attributes['controls']:null;
 	}
 	
 	/**
@@ -118,7 +118,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getLoop() {
-		return $this->attributes['loop'];
+		return isset($this->attributes['loop'])?$this->attributes['loop']:null;
 	}
 	
 	/**
@@ -139,7 +139,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getPoster() {
-		return $this->attributes['poster'];
+		return isset($this->attributes['poster'])?$this->attributes['poster']:null;
 	}
 	
 	/**
@@ -159,7 +159,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**
@@ -178,7 +178,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -198,7 +198,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMuted() {
-		return $this->attributes['muted'];
+		return isset($this->attributes['muted'])?$this->attributes['muted']:null;
 	}
 	
 	/**
@@ -218,7 +218,7 @@ class Video implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMediagroup() {
-		return $this->attributes['mediagroup'];
+		return isset($this->attributes['mediagroup'])?$this->attributes['mediagroup']:null;
 	}
 	
 	/**

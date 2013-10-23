@@ -22,7 +22,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHref() {
-		return $this->attributes['href'];
+		return isset($this->attributes['href'])?$this->attributes['href']:null;
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -79,7 +79,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getTarget() {
-		return $this->attributes['target'];
+		return isset($this->attributes['target'])?$this->attributes['target']:null;
 	}
 	
 	/**
@@ -106,7 +106,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRel() {
-		return $this->attributes['rel'];
+		return isset($this->attributes['rel'])?$this->attributes['rel']:null;
 	}
 	
 	/**
@@ -129,7 +129,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHreflang() {
-		return $this->attributes['hreflang'];
+		return isset($this->attributes['hreflang'])?$this->attributes['hreflang']:null;
 	}
 	
 	/**
@@ -150,7 +150,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
-		return $this->attributes['media'];
+		return isset($this->attributes['media'])?$this->attributes['media']:null;
 	}
 	
 	/**
@@ -171,7 +171,7 @@ class A implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**

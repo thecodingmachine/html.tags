@@ -26,7 +26,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -47,7 +47,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAutofocus() {
-		return $this->attributes['autofocus'];
+		return isset($this->attributes['autofocus'])?$this->attributes['autofocus']:null;
 	}
 	
 	/**
@@ -68,7 +68,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getDisabled() {
-		return $this->attributes['disabled'];
+		return isset($this->attributes['disabled'])?$this->attributes['disabled']:null;
 	}
 	
 	/**
@@ -90,7 +90,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -112,7 +112,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMultiple() {
-		return $this->attributes['multiple'];
+		return isset($this->attributes['multiple'])?$this->attributes['multiple']:null;
 	}
 	
 	/**
@@ -133,7 +133,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRequired() {
-		return $this->attributes['required'];
+		return isset($this->attributes['required'])?$this->attributes['required']:null;
 	}
 	
 	/**
@@ -155,7 +155,7 @@ class Select implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSize() {
-		return $this->attributes['size'];
+		return isset($this->attributes['size'])?$this->attributes['size']:null;
 	}
 	
 	/**

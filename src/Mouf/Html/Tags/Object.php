@@ -36,7 +36,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getData() {
-		return $this->attributes['data'];
+		return isset($this->attributes['data'])?$this->attributes['data']:null;
 	}
 	
 	/**
@@ -58,7 +58,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -77,7 +77,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -96,7 +96,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getUsemap() {
-		return $this->attributes['usemap'];
+		return isset($this->attributes['usemap'])?$this->attributes['usemap']:null;
 	}
 	
 	/**
@@ -115,7 +115,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getForm() {
-		return $this->attributes['form'];
+		return isset($this->attributes['form'])?$this->attributes['form']:null;
 	}
 	
 	/**
@@ -134,7 +134,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getWidth() {
-		return $this->attributes['width'];
+		return isset($this->attributes['width'])?$this->attributes['width']:null;
 	}
 	
 	/**
@@ -153,7 +153,7 @@ class Object implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHeight() {
-		return $this->attributes['height'];
+		return isset($this->attributes['height'])?$this->attributes['height']:null;
 	}
 	
 	/**

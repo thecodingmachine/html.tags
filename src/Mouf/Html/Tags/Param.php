@@ -26,7 +26,7 @@ class Param implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getName() {
-		return $this->attributes['name'];
+		return isset($this->attributes['name'])?$this->attributes['name']:null;
 	}
 	
 	/**
@@ -47,7 +47,7 @@ class Param implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getValue() {
-		return $this->attributes['value'];
+		return isset($this->attributes['value'])?$this->attributes['value']:null;
 	}
 	
 	/**
@@ -66,6 +66,6 @@ class Param implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<param '.$this->getAttributes().'>'.$this->renderChildren().'</param>';
+		echo '<param '.$this->getAttributes().'/>';
 	}
 }

@@ -24,7 +24,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getAlt() {
-		return $this->attributes['alt'];
+		return isset($this->attributes['alt'])?$this->attributes['alt']:null;
 	}
 	
 	/**
@@ -62,7 +62,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getCoords() {
-		return $this->attributes['coords'];
+		return isset($this->attributes['coords'])?$this->attributes['coords']:null;
 	}
 	
 	/**
@@ -105,7 +105,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getShape() {
-		return $this->attributes['shape'];
+		return isset($this->attributes['shape'])?$this->attributes['shape']:null;
 	}
 	
 	/**
@@ -133,7 +133,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHreflang() {
-		return $this->attributes['hreflang'];
+		return isset($this->attributes['hreflang'])?$this->attributes['hreflang']:null;
 	}
 	
 	/**
@@ -157,7 +157,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getTarget() {
-		return $this->attributes['target'];
+		return isset($this->attributes['target'])?$this->attributes['target']:null;
 	}
 	
 	/**
@@ -181,7 +181,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getRel() {
-		return $this->attributes['rel'];
+		return isset($this->attributes['rel'])?$this->attributes['rel']:null;
 	}
 	
 	/**
@@ -201,7 +201,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getHreflang() {
-		return $this->attributes['hreflang'];
+		return isset($this->attributes['hreflang'])?$this->attributes['hreflang']:null;
 	}
 	
 	/**
@@ -222,7 +222,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getMedia() {
-		return $this->attributes['media'];
+		return isset($this->attributes['media'])?$this->attributes['media']:null;
 	}
 	
 	/**
@@ -243,7 +243,7 @@ class Area implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getType() {
-		return $this->attributes['type'];
+		return isset($this->attributes['type'])?$this->attributes['type']:null;
 	}
 	
 	/**
@@ -262,6 +262,6 @@ class Area implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<area '.$this->getAttributes().'>'.$this->renderChildren().'</area>';
+		echo '<area '.$this->getAttributes().'/>';
 	}
 }

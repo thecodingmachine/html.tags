@@ -27,7 +27,7 @@ class Table implements HtmlElementInterface {
 	 * @return string|ValueInterface
 	 */
 	public function getSummary() {
-		return $this->attributes['summary'];
+		return isset($this->attributes['summary'])?$this->attributes['summary']:null;
 	}
 	
 	/**
