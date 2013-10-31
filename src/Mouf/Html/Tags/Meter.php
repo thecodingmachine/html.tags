@@ -20,7 +20,7 @@ use Mouf\Html\Tags\ChildrenTrait;
  *     The meter element should not be used to indicate progress (as in a progress bar). For that role, HTML provides a separate progress element. 
  * 
  * 
- *     The meter element also does not represent a scalar value of arbitrary range &acirc; for example, it would be wrong to use this to report a weight, or height, unless there is a known maximum value.
+ *     The meter element also does not represent a scalar value of arbitrary range - for example, it would be wrong to use this to report a weight, or height, unless there is a known maximum value.
  * 
  * 
  *     Authors are encouraged to include a textual representation of the gauge's state in the element's contents, for users of user agents that do not support the meter element. 

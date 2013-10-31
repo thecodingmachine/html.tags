@@ -22,7 +22,6 @@ class VarTag implements HtmlElementInterface {
 	use ChildrenTrait;
 	use GlobalAttributesTrait;
 
-
 	/**
 	 * Renders the object in HTML.
 	 * The Html is echoed directly into the output.

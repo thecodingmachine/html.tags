@@ -1,24 +1,24 @@
-body,true,The <body> element represents the main content of the document. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-section,true,The <section> element represents a generic section of a document or application. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-nav,true,The <nav> element represents a section with navigation links. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-article,true,The <article> element represents an independent item section of content. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-aside,true,"The <aside> element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h1,true,The <h1> element is the level 1 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h2,true,The <h2> element is the level 2 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h3,true,The <h3> element is the level 3 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h4,true,The <h4> element is the level 4 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h5,true,The <h5> element is the level 5 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-h6,true,The <h6> element is the level 6 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-hgroup,true,The <hgroup> element represent the heading of a section.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-header,true,The <header> element represents a group of introductory or navigational aids. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-footer,true,The <footer> element represents a footer for its nearest ancestor sectioning content or sectioning root element.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-address,true,The <address> element represents the contact information for its nearest article or body element ancestor. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-head,true,The <head> element represents a collection of metadata for the Document. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-title,false,The <title> element represents the document's title or name. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-base,false,"The <base> element allows authors to specify the document base URL for the purposes of resolving relative URLs, and the name of the default browsing context for the purposes of following hyperlinks. The element does not represent any content beyond this information. ",href,"valid URL potentially surrounded by spaces
+body,,true,The <body> element represents the main content of the document. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+section,,true,The <section> element represents a generic section of a document or application. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+nav,,true,The <nav> element represents a section with navigation links. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+article,,true,The <article> element represents an independent item section of content. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+aside,,true,"The <aside> element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h1,,true,The <h1> element is the level 1 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h2,,true,The <h2> element is the level 2 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h3,,true,The <h3> element is the level 3 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h4,,true,The <h4> element is the level 4 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h5,,true,The <h5> element is the level 5 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+h6,,true,The <h6> element is the level 6 header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+hgroup,,true,The <hgroup> element represent the heading of a section.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+header,,true,The <header> element represents a group of introductory or navigational aids. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+footer,,true,The <footer> element represents a footer for its nearest ancestor sectioning content or sectioning root element.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+address,,true,The <address> element represents the contact information for its nearest article or body element ancestor. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+head,,true,The <head> element represents a collection of metadata for the Document. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+title,,false,The <title> element represents the document's title or name. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+base,,false,"The <base> element allows authors to specify the document base URL for the purposes of resolving relative URLs, and the name of the default browsing context for the purposes of following hyperlinks. The element does not represent any content beyond this information. ",href,"valid URL potentially surrounded by spaces
 A base element, if it has an href attribute, must come before any other elements in the tree that have attributes defined as taking URLs, except the html element (its manifest attribute isn't affected by base elements).",target,"valid browsing context name or keyword ( _blank, _self, _parent, or _top)
 The value of the target attribute is used as the default when hyperlinks and forms in the Document cause navigation. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-link,false,The <link> element allows authors to link their document to other resources. ,href,"URL potentially surrounded by spaces
+link,,false,The <link> element allows authors to link their document to other resources. ,href,"URL potentially surrounded by spaces
 Specifies a URL that provides the destination of the link. ",rel,"set of space-separated tokens
 Specifies a list of tokens that specify the relationship between the document containing the link and the destination indicated by the link.Two categories of links can be created using the link element: Links to external resources and hyperlinks.",media,"    media-query list
     The media for which the destination of the hyperlink was designed.
@@ -33,7 +33,7 @@ A valid language tag, as defined in [BCP47]. ",type,"A valid MIME type that dest
 gives the MIME type of the linked resource.
 The default value for the type attribute, which is used if the attribute is absent, is ""text/css"". ",sizes,"icon sizes
 The sizes attribute is used with the icon link type. The attribute must not be specified on link elements that do not have a rel attribute that specifies the icon keyword. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-meta,false,"The <meta> element represents various kinds of metadata that cannot be expressed using the title, base, link, style, and script elements.
+meta,,false,"The <meta> element represents various kinds of metadata that cannot be expressed using the title, base, link, style, and script elements.
 Point
 
     Exactly one of the name, http-equiv, and charset attributes must be specified. 
@@ -65,12 +65,12 @@ Other metadata names may be registered in the WHATWG Wiki MetaExtensions page. "
     Sets the name of the default alternative style sheet set.
     refresh
     Acts as timed redirect.",content,Gives the value of the document metadata or pragma directive when the element is used for those purposes. ,charset,Specifies the character encoding used by the document.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-style,true,The <style> element allows authors to embed style information in their documents. ,media,"Specifies which media the styles apply to.
+style,,true,The <style> element allows authors to embed style information in their documents. ,media,"Specifies which media the styles apply to.
 The default, if the media attribute is omitted, is ""all"", meaning that by default styles apply to all media. ",type,"A valid MIME type that designates a styling language.
 Gives the styling language.
 The default value for the type attribute, which is used if the attribute is absent, is ""text/css"". ",scoped,"boolean
 Indicates that the specified style information is meant to apply only to the style element's parent element, and that element's child nodes. Otherwise, the specified styles are meant to apply to the entire document.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-script,true,"The <script> element allows authors to include dynamic script and data blocks in their documents.
+script,,true,"The <script> element allows authors to include dynamic script and data blocks in their documents.
 Point
 
     When used to include dynamic scripts, the scripts may either be embedded inline or may be imported from an external file using the src attribute. 
@@ -103,13 +103,13 @@ Point
     text/javascript;e4x=1
     ... User agents may support other MIME types and other languages. ",charset,"Gives the character encoding of the external script resource.
 The attribute must not be specified if the src attribute is not present. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-noscript,true,"The <noscript> element represents nothing if scripting is enabled, and represents its children if scripting is disabled.
+noscript,,true,"The <noscript> element represents nothing if scripting is enabled, and represents its children if scripting is disabled.
 Point
 
     The noscript element is used to present different markup to user agents that don't support scripting 
 
     The noscript element is only effective in the HTML syntax, it has no effect in the XHTML syntax. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-a,true,The <a> element represents a hyperlink. ,href,"A URL that provides the destination of the hyperlink. If the href attribute is not specified, the element represents a placeholder hyperlink. ",name,"    Specifies that its a element is a named hyperlink, with the name given by the value of this attribute.
+a,,true,The <a> element represents a hyperlink. ,href,"A URL that provides the destination of the hyperlink. If the href attribute is not specified, the element represents a placeholder hyperlink. ",name,"    Specifies that its a element is a named hyperlink, with the name given by the value of this attribute.
     The name attribute on the a element is obsolete. Consider putting an id attribute on the nearest container instead.
     Any string, with the following restrictions:
         must be at least one character long
@@ -128,13 +128,13 @@ Any string that is either of the following:
 A valid language tag, as defined in [BCP47]. ",media,"The media for which the destination of the hyperlink was designed.
 A valid media query list, as defined in [MediaQueries].",type,"The MIME type of the destination of the hyperlink.
 A string that identifies a valid MIME media type, as defined in [RFC2046].",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-abbr,true,"The <abbr> element represents an abbreviation or acronym.
+abbr,,true,"The <abbr> element represents an abbreviation or acronym.
 Point
 
     If the title attribute is specified, it must contain an expansion of the abbreviation, and nothing else.
     Abbreviations for which the author wants to give expansions, where using the abbr element with a title attribute is an alternative to including the expansion inline.
     Abbreviations that are likely to be unfamiliar to the document's readers, for which authors are encouraged to either mark up the abbreviation using a abbr element with a title attribute or include the expansion inline in the text the first time the abbreviation is used. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-b,true,"The <b> element represents a span of text to be stylistically offset from the normal prose without conveying any extra importance.
+b,,true,"The <b> element represents a span of text to be stylistically offset from the normal prose without conveying any extra importance.
 Point
 
     Some examples of cases:
@@ -145,7 +145,7 @@ Point
     The b element should be used as a last resort when no other element is more appropriate. In particular, headings should use the h1 to h6 elements, stress emphasis should use the em element, importance should be denoted with the strong element, and text marked or highlighted should use the mark element.
 
     Authors can use the class attribute on the b element to identify why the element is being used, so that if the style of a particular use is to be changed at a later date, the author doesn't have to go through annotating each use.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-bdo,true,"The <bdo> element represent explicit text directionality formatting control for its children.
+bdo,,true,"The <bdo> element represent explicit text directionality formatting control for its children.
 Point
 
     It allows authors to override the Unicode bidirectional algorithm by explicitly specifying a direction override.
@@ -153,13 +153,13 @@ Point
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-br,false,"The <br> element represents a line break.
+br,,false,"The <br> element represents a line break.
 Point
 
     This element must be used only for line breaks that are actually part of the content:
         poems
         Addresses",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-cite,true,"The <cite> element represents the title of a work.
+cite,,true,"The <cite> element represents the title of a work.
 Point
 
     Example of work:
@@ -179,7 +179,7 @@ Point
         musical ... 
 
     A person's name is not the title of a work. This element must therefore not be used to mark up people's names.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-code,true,"The <code> element represents a fragment of computer code.
+code,,true,"The <code> element represents a fragment of computer code.
 Point
 
     For example of computer code:
@@ -188,7 +188,7 @@ Point
         computer program 
 
 etc. Any other string that a computer would recognize. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-dfn,true,"The <dfn> element represents the defining instance of a term.
+dfn,,true,"The <dfn> element represents the defining instance of a term.
 Point
 
     If the dfn element is specified, nearest parent of the dfn element(paragraph, description list group, or section) must also contain the definitions for the defining term. 
@@ -200,12 +200,12 @@ Point
     TextContent of the dfn element
 
     If the title attribute of the dfn element is present, then it must contain only the term being defined. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-em,true,"The <em> element represents stress emphasis of its contents.
+em,,true,"The <em> element represents stress emphasis of its contents.
 Point
 
     The placement of emphasis changes the meaning of the sentence.
     The level of emphasis that a particular piece of content has is given by its number of ancestor em elements.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-i,true,"The <i> element represents an span of text that offset from the normal prose.
+i,,true,"The <i> element represents an span of text that offset from the normal prose.
 Point
 
     Some examples of cases:
@@ -218,7 +218,7 @@ Point
     Authors are encouraged to consider whether other elements might be more applicable than the i element, for instance the em element for marking up stress emphasis, or the dfn element to mark up the defining instance of a term. 
 
     Authors can use the class attribute on the i element to identify why the element is being used, so that if the style of a particular use is to be changed at a later date, the author doesn't have to go through the entire document (or series of related documents) annotating each use. [Example A] For more information see W3C Internationalization articles",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-kbd,true,"The <kbd> element represents user input.
+kbd,,true,"The <kbd> element represents user input.
 Point
 
     Example of user input:
@@ -228,22 +228,22 @@ Point
     When the kbd element is nested inside a samp element, it represents the input as it was echoed by the system.
     When the kbd element contains a samp element, it represents input based on system output, for example invoking a menu item.
     When the kbd element is nested inside another kbd element, it represents an actual key or other single unit of input as appropriate for the input mechanism.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-mark,true,"The <mark> element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-q,true,"The <q> element represents some phrasing content quoted from another source.
+mark,,true,"The <mark> element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+q,,true,"The <q> element represents some phrasing content quoted from another source.
 Point
 
     Content inside a q element must be quoted from another source. If it has address, a cite attribute should present.
     The use of q elements to mark up quotations is entirely optional; using explicit quotation punctuation without q elements is just as correct.",cite," valid URL potentially surrounded by spaces
 Specifies the address in the quotation source.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rp,true,"The <rp> element can be used to provide parentheses around a ruby text component of a ruby annotation.
+rp,,true,"The <rp> element can be used to provide parentheses around a ruby text component of a ruby annotation.
 Point
 
     Parentheses be shown by user agents that don't support ruby annotations. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-rt,true,"The <rt> element marks the ruby text component of a ruby annotation.
+rt,,true,"The <rt> element marks the ruby text component of a ruby annotation.
 Point
 
     An rt element that is a child of a ruby element represents an annotation for the nodes that immediately precedes. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ruby,true,"The <ruby> element allows one or more spans of phrasing content to be marked with ruby annotations.
+ruby,,true,"The <ruby> element allows one or more spans of phrasing content to be marked with ruby annotations.
 Point
 
     Ruby annotations are short runs of text presented alongside base text, primarily used in East Asian typography as a guide for pronunciation or to include other annotations.
@@ -251,12 +251,12 @@ Point
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-s,true,"The <s> element represents contents that are no longer accurate or no longer relevant.
+s,,true,"The <s> element represents contents that are no longer accurate or no longer relevant.
 Point
 
     The s element mark a span of text as having been removed from a document. when indicating document edits, use the del element. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-samp,true,The <samp> element represents output from a program or computing system. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-small,true,"The <small> element represents side comments such as small print.
+samp,,true,The <samp> element represents output from a program or computing system. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+small,,true,"The <small> element represents side comments such as small print.
 Point
 
     Small print:
@@ -267,23 +267,23 @@ Point
 
     Small print is also sometimes used for attribution, or for satisfying licensing requirements.
     This element is only intended for short runs of text. It should not be used for extended spans of text. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-span,true,"The <span> element doesn't mean anything on its own, but can be useful when used together with the global attributes, e.g. class, lang, or dir. It represents its children. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-strong,true,"The <strong> element represents strong importance for its contents.
+span,,true,"The <span> element doesn't mean anything on its own, but can be useful when used together with the global attributes, e.g. class, lang, or dir. It represents its children. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+strong,,true,"The <strong> element represents strong importance for its contents.
 Point
 
     The relative level of importance of a piece of content is given by its number of ancestor strong elements.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sub,true,"The <sub> element represents a subscript.
+sub,,true,"The <sub> element represents a subscript.
 Point
 
     This element must be used only to mark up typographical conventions with specific meanings. 
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-sup,true,"The <sup> element represents a superscript.
+sup,,true,"The <sup> element represents a superscript.
 Point
 
     This element must be used only to mark up typographical conventions with specific meanings. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-time,true,"The <time> element represents its contents, along with a machine-readable form of those contents in the datetime attribute.
+time,,true,"The <time> element represents its contents, along with a machine-readable form of those contents in the datetime attribute.
 Point
 
     The datetime value of a time element is the value of the element's datetime attribute, if it has one, or the element's textContent, if it does not.
@@ -304,23 +304,23 @@ Point
             00:00 
         See more details: Datetime value at HTML5 specification. 
 ",datetime,Specifies the date or time that the element represents. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-var,true,"The <var> element represents a variable.
+var,VarTag,true,"The <var> element represents a variable.
 Point
 
     This element could be an actual variable in a mathematical expression or programming context. 
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-wbr,true,The <wbr> element represents a line break opportunity. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ins,true,"The <ins> element represents an addition to the document.
+wbr,,true,The <wbr> element represents a line break opportunity. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ins,,true,"The <ins> element represents an addition to the document.
 Point
 
     This elements should not cross implied paragraph boundaries. ",cite,"Specify the address of a document that explains the change. For example, the minutes of meeting. ",datetime,Specify the time and date of the change.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-del,true,"The <del> element represents a removal from the document.
+del,,true,"The <del> element represents a removal from the document.
 Point
 
     This elements should not cross implied paragraph boundaries. ",cite,"Specify the address of a document that explains the change. For example, the minutes of meeting. ",datetime,Specify the time and date of the change.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-img,false,"The <img> element represents an image.
+img,,false,"The <img> element represents an image.
 Point
 
     The image given by the src attribute is the embedded content, and the value of the alt attribute is the img element's fallback content. 
@@ -342,7 +342,7 @@ The requirements on the alt attribute's value are described in the next section.
 
 
 ",ismap,Specifies that its img element provides access to a server-side image map. ,width,"Give the width of the visual content of the element, in CSS pixels. ",height,"Give the height of the visual content of the element, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-iframe,false,"The <iframe> element represents a nested browsing context.
+iframe,,false,"The <iframe> element represents a nested browsing context.
 Point
 
     If the src attribute and the srcdoc attribute are both specified together, the srcdoc attribute takes priority. This allows authors to provide a fallback URL for legacy user agents that do not support the srcdoc attribute. 
@@ -365,14 +365,14 @@ Enables a set of extra restrictions on any content hosted by the iframe.
     allows the content to navigate its top-level browsing context
     allow-forms and allow-scripts
     re-enable forms and scripts respectively (though scripts are still prevented from creating popups). ",seamless,Indicates that the iframe element's browsing context is to be rendered in a manner that makes it appear to be part of the containing document (seamlessly included in the parent document). ,width,"Give the width of the visual content of the element, in CSS pixels. ",height,"Give the height of the visual content of the element, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-embed,true,"The <embed> element represents an integration point for an external (typically non-HTML) application or interactive content.
+embed,,true,"The <embed> element represents an integration point for an external (typically non-HTML) application or interactive content.
 Accessibility
 
 Authors should ensure that the information and user interface components must be presentable to users in ways they can perceive (WCAG 2.0 - Principle 1: Perceivable). This includes providing alternatives for time-based media Guideline 1.2.
 
 
 ",src,gives the address of the resource being embedded. ,type,Specifies the type of the resource. ,width,"Give the width of the visual content of the element, in CSS pixels. ",height,"Give the height of the visual content of the element, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-object,true,"The <object> element represents can represent an external resource, which, depending on the type of the resource, will either be treated as an image, as a nested browsing context, or as an external resource to be processed by a plugin.
+object,,true,"The <object> element represents can represent an external resource, which, depending on the type of the resource, will either be treated as an image, as a nested browsing context, or as an external resource to be processed by a plugin.
 Point
 
     Example of external resource:
@@ -387,7 +387,7 @@ Authors should ensure that the information and user interface components must be
 
 
 ",type,Specifies the type of the resource. ,name,Gives the name of the input element. ,usemap,Specifies a hash-name reference to a map element with which to associate the object. ,form,Associate the object element with its form owner. ,width,"Give the width of the visual content of the element, in CSS pixels. ",height,"Give the height of the visual content of the element, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-param,false,"The <param> element defines parameters for plugins invoked by object elements.
+param,,false,"The <param> element defines parameters for plugins invoked by object elements.
 Point
 
     It does not represent anything on its own. 
@@ -395,7 +395,7 @@ Point
     The name attribute and the value attribute must be present. ",name,"Gives the name of the parameter.
 This attribute must be present. ",value,"Gives the value of the parameter.
 This attribute must be present. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-video,true,"A <video> element is used for playing videos or movies.
+video,,true,"A <video> element is used for playing videos or movies.
 
 
 ",src,The URL for the video. ,autoplay,"""autoplay"" or """" (empty string) or empty
@@ -410,7 +410,7 @@ Instructs the UA to expose a user interface for controlling playback of the vide
 Instructs the UA to seek back to the start of the video upon reaching the end. ",poster,"URL potentially surrounded by spaces
 The address of an image file for the UA to show while no video data is available. ",height,"The height of the video, in CSS pixels. ",width,"The width of the video, in CSS pixels. ",muted,"""muted"" or """" (empty string) or empty
 Represents the default state of the audio channel of the video, potentially overriding user preferences. ",mediagroup,Instructs the UA to link multiple videos and/or audio streams together. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-audio,true,An <audio> element represents a sound or an audio stream. ,src,The URL for the audio stream. ,autoplay,"""autoplay"" or """" (empty string) or empty
+audio,,true,An <audio> element represents a sound or an audio stream. ,src,The URL for the audio stream. ,autoplay,"""autoplay"" or """" (empty string) or empty
 Instructs the UA to automatically begin playback of the video as soon as it can do so without stopping. ",preload,"""none"" or ""metadata"" or ""auto"" or """" (empty string) or empty
 Represents a hint to the UA about whether optimistic downloading of the video itself or its metadata is considered worthwhile.
 
@@ -420,8 +420,8 @@ Represents a hint to the UA about whether optimistic downloading of the video it
     Specifying the empty string is equivalent to specifying the value ""auto"". ",controls,"""controls"" or """" (empty string) or empty
 Instructs the UA to expose a user interface for controlling playback of the video. ",loop,"""loop"" or """" (empty string) or empty
 Instructs the UA to seek back to the start of the video upon reaching the end. ",mediagroup,Instructs the UA to link multiple videos and/or audio streams together. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-source,false,The source element enables multiple media sources to be specified for audio and video elements.,src,The address of the media source.,type,"The type of the media source (used for helping the UA determine, before fetching this media source, if it can play it).",media,"The intended media type of the media source (used for helping the UA determine, before fetching this media source, if it is useful to the user).",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-track,false,The <track> element allows authors to specify explicit external timed tracks for media elements. It does not represent anything on its own. ,kind,"subtitles/ captions/ descriptions/ chapters/ metadata
+source,,false,The source element enables multiple media sources to be specified for audio and video elements.,src,The address of the media source.,type,"The type of the media source (used for helping the UA determine, before fetching this media source, if it can play it).",media,"The intended media type of the media source (used for helping the UA determine, before fetching this media source, if it is useful to the user).",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+track,,false,The <track> element allows authors to specify explicit external timed tracks for media elements. It does not represent anything on its own. ,kind,"subtitles/ captions/ descriptions/ chapters/ metadata
 
     subtitles
     Transcription or translation of the dialogue, suitable for when the sound is available but not understood
@@ -438,15 +438,15 @@ track,false,The <track> element allows authors to specify explicit external time
 
 ",charset,character encoding name ,srclang,"Gives the language of the timed track data.
 This attribute must be present if the element's kind attribute is in the subtitles state. ",label,Gives a user-readable title for the track. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-canvas,true,"A <canvas> element provides scripts with a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, or other visual images on the fly. ",width,"The width of the canvas, in CSS pixels. ",height,"The height of the canvas, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-map,true,"The <map> element, in conjunction with any area element descendants, defines an image map.
+canvas,,true,"A <canvas> element provides scripts with a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, or other visual images on the fly. ",width,"The width of the canvas, in CSS pixels. ",height,"The height of the canvas, in CSS pixels. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+map,,true,"The <map> element, in conjunction with any area element descendants, defines an image map.
 Point
 
     An image, in the form of an img element or an object element representing an image, may be associated with an image map (in the form of a map element) by specifying a usemap attribute on the img or object element.",name,"Gives the map a name so that it can be referenced.
 The attribute must be present and must have a non-empty value with no space characters.
 The value of the name attribute must not be a compatibility-caseless match for the value of the name attribute of another map element in the same document.
 If the id attribute is also specified, both attributes must have the same value. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-area,false,"The <area> element represents either a hyperlink with some text and a corresponding area on an image map, or a dead area on an image map. ",alt,"    If the area element has a href attribute, the alt attribute must be present.
+area,,false,"The <area> element represents either a hyperlink with some text and a corresponding area on an image map, or a dead area on an image map. ",alt,"    If the area element has a href attribute, the alt attribute must be present.
     The alt attribute may be left blank if there is another area element in the same image map that points to the same resource and has a non-blank alt attribute. 
 
 
@@ -483,44 +483,44 @@ Any string that is either of the following:
 A valid language tag, as defined in [BCP47]. ",media,"The media for which the destination of the hyperlink was designed.
 A valid media query list, as defined in [MediaQueries]. ",type,"The MIME type of the destination of the hyperlink.
 A string that identifies a valid MIME media type, as defined in [RFC2046]. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-math,true,The <math> element represents the root of a MathML fragment. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-svg,true,The <svg> element represents the root of a Scalable Vector Graphics (SVG) fragment. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-table,true,"The <table> element represents data with more than one dimension, in the form of a table.
+math,,true,The <math> element represents the root of a MathML fragment. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+svg,,true,The <svg> element represents the root of a Scalable Vector Graphics (SVG) fragment. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+table,,true,"The <table> element represents data with more than one dimension, in the form of a table.
 Point
 
     Tables must not be used as layout aids. There are a variety of alternatives to using HTML tables for layout, primarily using CSS positioning and the CSS table model.
     Users might have difficulty understanding the content, authors should include explanatory information introducing the table. This information is useful for all users, but is especially useful for users who cannot see the table, e.g. users of screen readers.
     Tables have rows and columns given by their descendants. A table must not have an empty row or column. ",summary,explanatory information introducing the table ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-caption,true,"The <caption> element represents the title of the table that is its parent, if it has a parent and that is a table element.
+caption,,true,"The <caption> element represents the title of the table that is its parent, if it has a parent and that is a table element.
 Point
 
     A caption can introduce context for a table, making it significantly easier to understand.
     When a table element is the only content in a figure element other than the figcaption, the caption element should be omitted in favor of the figcaption.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-colgroup,true,"The <colgroup> element represents a group of one or more columns in the table that is its parent.
+colgroup,,true,"The <colgroup> element represents a group of one or more columns in the table that is its parent.
 Point
 
     As a child of a table element, after any caption elements and before any thead, tbody, tfoot, and tr elements.
     If the colgroup element contains no col elements, then the element may have a span content attribute specified.",span,valid non-negative integer ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-col,true,"The <col> element represents one or more columns in the column group represented by that colgroup.
+col,,true,"The <col> element represents one or more columns in the column group represented by that colgroup.
 Point
 
     As a child of a colgroup element that doesn't have a span attribute. ",span,valid non-negative integer ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tbody,true,"The <tbody> element represents a block of rows that consist of a body of data for the parent table element, if the tbody element has a parent and it is a table.
+tbody,,true,"The <tbody> element represents a block of rows that consist of a body of data for the parent table element, if the tbody element has a parent and it is a table.
 Point
 
     As a child of a table element, after any caption, colgroup, and thead elements, but only if there are no tr elements that are children of the table element.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-thead,true,"The <thead> element represents the block of rows that consist of the column labels (headers) for the parent table element, if the thead element has a parent and it is a table.
+thead,,true,"The <thead> element represents the block of rows that consist of the column labels (headers) for the parent table element, if the thead element has a parent and it is a table.
 Point
 
     As a child of a table element, after any caption, and colgroup elements and before any tbody, tfoot, and tr elements, but only if there are no other thead elements that are children of the table element.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tfoot,true,"The <tfoot> element represents the block of rows that consist of the column summaries (footers) for the parent table element, if the tfoot element has a parent and it is a table.
+tfoot,,true,"The <tfoot> element represents the block of rows that consist of the column summaries (footers) for the parent table element, if the tfoot element has a parent and it is a table.
 Point
 
     As a child of a table element, after any caption, colgroup, and thead elements and before any tbody and tr elements, but only if there are no other tfoot elements that are children of the table element.
     Or, as a child of a table element, after any caption, colgroup, thead, tbody, and tr elements, but only if there are no other tfoot elements that are children of the table element. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-tr,true,The <tr> element represents a row of cells in a table. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-td,true,The <td> element represents a data cell in a table. ,colspan,This attribute gives the number of columns respectively that the cell is to span.,rowspan,This attribute gives the number of rows respectively that the cell is to span. ,headers,The value of this attribute must have the value of an id attribute of the th element that is targeted.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-th,true,The <th> element represents a header cell in a table. ,colspan,This attribute gives the number of columns respectively that the cell is to span.,rowspan,This attribute gives the number of rows respectively that the cell is to span. ,headers,The value of this attribute must have the value of an id attribute of the th element that is targeted.,scope,"row/ col/ rowgroup/ colgroup
+tr,,true,The <tr> element represents a row of cells in a table. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+td,,true,The <td> element represents a data cell in a table. ,colspan,This attribute gives the number of columns respectively that the cell is to span.,rowspan,This attribute gives the number of rows respectively that the cell is to span. ,headers,The value of this attribute must have the value of an id attribute of the th element that is targeted.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+th,,true,The <th> element represents a header cell in a table. ,colspan,This attribute gives the number of columns respectively that the cell is to span.,rowspan,This attribute gives the number of rows respectively that the cell is to span. ,headers,The value of this attribute must have the value of an id attribute of the th element that is targeted.,scope,"row/ col/ rowgroup/ colgroup
 The scope attribute specifies the cell which the influence of headding cell reaches. 
 
     row
@@ -531,7 +531,7 @@ The scope attribute specifies the cell which the influence of headding cell reac
     The header cell applies to all the remaining cells in the row group. A th element's scope attribute must not be in the row group state if the element is not anchored in a row group.
     colgroup
     The header cell applies to all the remaining cells in the column group. A th element's scope attribute must not be in the column group state if the element is not anchored in a column group. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-form,true,"The form element represents a user-submittable form.
+form,,true,"The form element represents a user-submittable form.
 Point
 
     Some of which can represent editable values that can be submitted to a server for processing. 
@@ -560,22 +560,22 @@ The missing value default for these attributes is the application/x-www-form-url
 
 
 ",novalidate,"If present, they indicate that the form is not to be validated during submission. ",target,Specfy a browsing context name or keyword that represents the target of the control. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fieldset,true,"The <fieldset> element represents a set of form controls optionally grouped under a common name.
+fieldset,,true,"The <fieldset> element represents a set of form controls optionally grouped under a common name.
 Point
 
     The name of the group is given by the first legend element that is a child of the fieldset element, if any. The remainder of the descendants form the group. 
 
 
 ",disabled,"When specified, causes all the form control descendants of the fieldset element, excluding those that are descendants of the fieldset element's first legend element child, if any, to be disabled. ",form,Associate the fieldset element with its form owner. ,name,Represents the element's name. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-legend,true,The <legend> element represents a caption for the rest of the contents of the legend element's parent fieldset element. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-label,true,"The <label> element represents a caption in a user interface.
+legend,,true,The <legend> element represents a caption for the rest of the contents of the legend element's parent fieldset element. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+label,,true,"The <label> element represents a caption in a user interface.
 Point
 
     The caption can be associated with a specific form control:
         Using for attribute
         By putting the form control inside the label element itself.",for,"Specified to indicate a form control with which the caption is to be associated.
 The attribute's value must be the ID of a labelable form-associated element in the same Document as the label element. ",form,Associate the fieldset element with its form owner. ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-input,false,"The <input> element represents a typed data field, usually with a form control to allow the user to edit the data. ",type,"Keyword 	State 	Data type 	Control type
+input,,false,"The <input> element represents a typed data field, usually with a form control to allow the user to edit the data. ",type,"Keyword 	State 	Data type 	Control type
 hidden 	Hidden 	An arbitrary string 	n/a
 text 	Text 	Text with no line breaks 	Text field
 search 	Search 	Text with no line breaks 	Search field
@@ -598,8 +598,8 @@ file 	File Upload 	Zero or more files each with a MIME type and optionally a fil
 submit 	Submit Button 	An enumerated value, with the extra semantic that it must be the last value selected and initiates form submission 	A button
 image 	Image Button 	A coordinate, relative to a particular image's size, with the extra semantic that it must be the last value selected and initiates form submission 	Either a clickable image, or a button
 reset 	Reset Button 	n/a 	A button
-button 	Button 	n/a 	A button ",name,Gives the name of the input element. ,value,Gives the default value of the input element. ,accept,Only used on file upload,alt,Only used when type is Â«Â imagebuttonÂ Â»,autocomplete,,checked,,formaction,,formenctype,,formmethod,,formnovalidate,,formtarget,,height,,width,,list,,max,,maxlength,,min,,multiple,,pattern,,placeholder,,readonly,,required,,size,,src,,step
-button,true,The <button> element represents a button. ,type,"submit/ reset/ button
+button 	Button 	n/a 	A button ",name,Gives the name of the input element. ,value,Gives the default value of the input element. ,accept,Only used on file upload,alt,Only used when type is « imagebutton »,autocomplete,,checked,,formaction,,formenctype,,formmethod,,formnovalidate,,formtarget,,height,,width,,list,,max,,maxlength,,min,,multiple,,pattern,,placeholder,,readonly,,required,,size,,src,,step
+button,,true,The <button> element represents a button. ,type,"submit/ reset/ button
 The missing value default is the Submit Button state.",autofocus,"boolean
 Allows the author to indicate that a control is to be focused as soon as the page is loaded",disabled,"    boolean
     If present, make the control non-interactive and to prevent its value from being submitted. 
@@ -610,7 +610,7 @@ Associate the button element with its form owner.
 By default, the button element is associated with its nearest ancestor form element.",name,"unique name
 Represents the element's name. ",value,"element's value
 Gives the element's value for the purposes of form submission. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-select,true,"The <select> element represents a control for selecting amongst a set of options.
+select,,true,"The <select> element represents a control for selecting amongst a set of options.
 Point
 
     The list of options for a select element consists of all the option element children of the select element, and all the option element children of all the optgroup element children of the select element, in tree order. ",name,"unique name
@@ -623,14 +623,14 @@ If the attribute is present, then the select element represents a control for se
 When specified, the user will be required to select a value before submitting the form. ",size,"valid non-negative intege
 Gives the number of options to show to the user.
 If the multiple attribute is present, then the size attribute's default value is 4. If the multiple attribute is absent, then the size attribute's default value is 1. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-datalist,true,"The <datalist> element represents the list that represent predefined options for other controls.
+datalist,,true,"The <datalist> element represents the list that represent predefined options for other controls.
 Point
 
     The value of an option element in a datalist element represent a suggestion. 
 
 
     The datalist element is hooked up to an input element using the list attribute on the input element.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-optgroup,true,"The <optgroup> element represents a group of option elements with a common label.
+optgroup,,true,"The <optgroup> element represents a group of option elements with a common label.
 Point
 
     The label attribute must be specified.",disabled,"    boolean
@@ -639,14 +639,14 @@ Point
 
 ",label,"string
 Its value gives the name of the group, for the purposes of the user interface. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-option,false,The <option> element represents an option in a select element or as part of a list of suggestions in a datalist element. ,disabled,"boolean
+option,,true,The <option> element represents an option in a select element or as part of a list of suggestions in a datalist element. ,disabled,"boolean
 if present, disable a option. ",label,"string
 Provides a label for element.
 If there isn't, the label of an option element is the textContent of the element. ",value,"string
 Provides a value for element.
 If there isn't, the value of an option element is the textContent of the element. ",selected,"boolean
 Represents the default selectedness of the element.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-textarea,true,The <textarea> element represents a multiline plain text edit control for the element's raw value. ,name,"unique name
+textarea,,true,The <textarea> element represents a multiline plain text edit control for the element's raw value. ,name,"unique name
 Represents the element's name. ",autofocus,"boolean
 Allows the author to indicate that a control is to be focused as soon as the page is loaded ",cols,"valid non-negative integer
 specifies the expected maximum number of characters per line. by defult, it is 20.",rows,"valid non-negative integer
@@ -667,7 +667,7 @@ When specified, the user will be required to enter a value before submitting the
     hard
     The Hard state indicates that the text in the textarea is to have newlines added by the user agent so that the text is wrapped when it is submitted.
     If the element's wrap attribute is in the Hard state, the cols attribute must be specified. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-keygen,false,"The <keygen> element represents a key pair generator control.
+keygen,,false,"The <keygen> element represents a key pair generator control.
 Point
 
     When the control's form is submitted, the private key is stored in the local keystore, and the public key is packaged and sent to the server. 
@@ -687,13 +687,13 @@ If present, make the control non-interactive and to prevent its value from being
 
 ",keytype,"rsa
 The type of key generated. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-output,false,The <output> element represents the result of a calculation. ,name,"unique name
+output,,false,The <output> element represents the result of a calculation. ,name,"unique name
 Represents the element's name. ",for,"unordered set of unique space-separated tokens
 Allows an explicit relationship to be made between the result of a calculation and the elements that represent the values that went into the calculation or that otherwise influenced the calculation.
 This attribute must have the value of an ID of an element in the same Document.",form,"the ID of a form element in the element's owner
 Associate the output element with its form owner.
 By default, the output element is associated with its nearest ancestor form element. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-progress,true,"The <progress> element represents the completion progress of a task.
+progress,,true,"The <progress> element represents the completion progress of a task.
 Point
 
     the progress is a number in the range zero to a maximum, giving the fraction of work that has so far been completed. 
@@ -709,7 +709,7 @@ This attribute must have a value greater than zero. ",form,"    the ID of a form
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-meter,true,"The <meter> element represents a scalar measurement within a known range, or a fractional value.
+meter,,true,"The <meter> element represents a scalar measurement within a known range, or a fractional value.
 Point
 
     Example of meter:
@@ -721,7 +721,7 @@ Point
     The meter element should not be used to indicate progress (as in a progress bar). For that role, HTML provides a separate progress element. 
 
 
-    The meter element also does not represent a scalar value of arbitrary range â€” for example, it would be wrong to use this to report a weight, or height, unless there is a known maximum value.
+    The meter element also does not represent a scalar value of arbitrary range - for example, it would be wrong to use this to report a weight, or height, unless there is a known maximum value.
 
 
     Authors are encouraged to include a textual representation of the gauge's state in the element's contents, for users of user agents that do not support the meter element. ",value,"valid floating point numbers
@@ -746,14 +746,14 @@ Specifies the range that is considered to be the ""low"" part. ",high,"    valid
 
 
 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-details,true,"The <details> element represents a disclosure widget from which the user can obtain additional information or controls.
+details,,true,"The <details> element represents a disclosure widget from which the user can obtain additional information or controls.
 Point
 
     The details element include a summary element followed by flow content.
     The summary element child of the element, if any, represents the summary or legend of the details. ",open,"boolean
 If present, it indicates that the details are to be shown to the user. If the attribute is absent, the details are not to be shown.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-summary,true,"The <summary> element represents a summary, caption, or legend for the rest of the contents of the summary element's parent details element, if any. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-command,false,"The <command> element represents a command that the user can invoke.
+summary,,true,"The <summary> element represents a summary, caption, or legend for the rest of the contents of the summary element's parent details element, if any. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+command,,false,"The <command> element represents a command that the user can invoke.
 Point
 
     A command can be part of a context menu or toolbar, using the menu element, or can be put anywhere else in the page, to define a keyboard shortcut. ",type,"command/ checkbox/ radio
@@ -775,7 +775,7 @@ If present, indicates that the command is not available in the current state. ",
 
 ",radiogroup,"string
 Gives the name of the group of commands that will be toggled when the command itself is toggled, for commands whose type attribute has the value ""radio"". ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-menu,true,The <menu> element represents a list of commands. ,type,"context/ toolbar/ list
+menu,,true,The <menu> element represents a list of commands. ,type,"context/ toolbar/ list
 Indicates the kind of menu being declared:
 
     context

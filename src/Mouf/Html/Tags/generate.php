@@ -3,10 +3,13 @@ $row = 1;
 if (($handle = fopen("tags.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $tag = $data[0];
-        $hasChildren = $data[1] == "true";
-        $comment = utf8_encode(htmlentities($data[2], ENT_NOQUOTES, 'ISO-8859-15'));
+        $majTag = $data[1];
+        $hasChildren = $data[2] == "true";
+        $comment = utf8_encode(htmlentities($data[3], ENT_NOQUOTES, 'ISO-8859-15'));
         
-        $majTag = advanceducfirst($tag);
+        if (!$majTag) {
+        	$majTag = advanceducfirst($tag);
+        }
 
         //echo $tag."\n"; continue;
         
@@ -39,7 +42,7 @@ class $majTag implements HtmlElementInterface {
     	$file .= "	use GlobalAttributesTrait;
 ";
 
-    	$i=3;
+    	$i=4;
     	
     	while (isset($data[$i]) && !empty($data[$i])) {
     	

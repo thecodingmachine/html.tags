@@ -4,6 +4,7 @@ namespace Mouf\Html\Tags;
 use Mouf\Html\Tags\GlobalAttributesTrait;
 use Mouf\Html\HtmlElement\HtmlElementInterface;
 use Mouf\Utils\Value\ValueInterface;
+use Mouf\Html\Tags\ChildrenTrait;
 
 /**
  * A &lt;option&gt; tag in HTML.
@@ -12,6 +13,7 @@ use Mouf\Utils\Value\ValueInterface;
  * @author David Négrier <david@mouf-php.com>
  */
 class Option implements HtmlElementInterface {
+	use ChildrenTrait;
 	use GlobalAttributesTrait;
 
     /**
@@ -103,6 +105,6 @@ class Option implements HtmlElementInterface {
 	 * The Html is echoed directly into the output.
 	 */
 	public function toHtml() {
-		echo '<option '.$this->getAttributes().'/>';
+		echo '<option '.$this->getAttributes().'>'.$this->renderChildren().'</option>';
 	}
 }
