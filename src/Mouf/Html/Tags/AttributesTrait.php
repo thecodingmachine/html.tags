@@ -48,6 +48,8 @@ trait AttributesTrait {
 				}
 			} elseif (is_bool($value)) {
 				$attrStrs[] = $key.'='.($value?'"true"':'"false"');
+			} elseif ($value === null) {
+				// Do nothing
 			} else {
 				$attrStrs[] = $key.'="'.htmlspecialchars($value, ENT_QUOTES, 'UTF-8').'"';
 			}

@@ -45,6 +45,19 @@ trait GlobalAttributesTrait {
 		$this->attributes['class'][$class] = $class;
 		return $this;
 	}
+
+	/**
+	 * Adds an array of CSS classes to the HTML element
+	 *
+	 * @param string[] $classes
+	 * @return static
+	 */
+	public function addClasses($classes) {
+		foreach ($classes as $class) {
+			$this->attributes['class'][$class] = $class;
+		}
+		return $this;
+	}
 	
 	/**
 	 * Removes a CSS class from the HTML element
