@@ -95,7 +95,7 @@ trait GlobalAttributesTrait {
 	 * @return boolean
 	 */
 	public function isContenteditable() {
-		return isset($this->attributes[''])?$this->attributes['contenteditable']:null;
+		return isset($this->attributes['contenteditable'])?$this->attributes['contenteditable']:null;
 	}
 	
 	/**
@@ -114,7 +114,7 @@ trait GlobalAttributesTrait {
 	 * @return array<string, string>
 	 */
 	public function getDataAttributes() {
-		return isset($this->attributes[''])?$this->attributes['data']:null;
+		return isset($this->attributes['data'])?$this->attributes['data']:null;
 	}
 	
 	/**
