@@ -137,7 +137,7 @@ class Input implements HtmlElementInterface {
 		return $this;
 	}
     /**
-	 * Only used when type is « imagebutton »
+	 * Only used when type is imagebutton
 	 * 
 	 * @return string|ValueInterface
 	 */
@@ -146,7 +146,7 @@ class Input implements HtmlElementInterface {
 	}
 	
 	/**
-	 * Only used when type is « imagebutton »
+	 * Only used when type is imagebutton
 	 * 
 	 * @param string|ValueInterface $alt
 	 * @return static
