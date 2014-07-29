@@ -22,7 +22,7 @@ trait GlobalAttributesTrait {
 	/**
 	 * Specifies one or more classnames for an element (refers to a class in a style sheet)
 	 *
-	 * @param array $classes
+	 * @param array<string, string>
 	 * @return static
 	 */
 	public function setClasses(array $classes) {
