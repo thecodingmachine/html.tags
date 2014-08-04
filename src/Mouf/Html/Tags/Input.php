@@ -469,13 +469,20 @@ class Input implements HtmlElementInterface {
 	}
 	
 	/**
-	 * 
-	 * 
 	 * @param string|ValueInterface $readonly
 	 * @return static
 	 */
 	public function setReadonly($readonly) {
 		$this->attributes['readonly'] = $readonly;
+		return $this;
+	}
+
+    /**
+	 * @param string|ValueInterface $readonly
+	 * @return static
+	 */
+	public function setDisabled($disabled) {
+		$this->attributes['disabled'] = $disabled;
 		return $this;
 	}
     /**
